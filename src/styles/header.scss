@@ -1,0 +1,62 @@
+@import "global.scss";
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 1.875rem;
+
+        li{
+            a{
+                color: $black;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .logo{
+        p{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: $black;
+
+            span{
+                font-style: italic;
+                color: $primary;
+            }
+        }
+    }
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+
+        .download-curriculum{
+            transition: all .5s;
+            &:hover{
+                border: 1px solid $text;
+                background-color: transparent;
+                color: $text;
+            }
+        }
+
+        .button-whats{
+            transition: all .5s;
+    
+            &:hover{
+                border: 1px solid #09A405;
+                background-color: transparent;
+                color: #09A405;
+            }
+        }
+    }
+    
+}
