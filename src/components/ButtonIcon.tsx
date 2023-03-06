@@ -6,11 +6,12 @@ interface ButtonIconProps {
     backgroundColor: string;
     classButton: string;
     icon: any;
+    link: string;
 }
 
-export function ButtonIcon({text, backgroundColor, classButton, icon}: ButtonIconProps) {
+export function ButtonIcon({text, backgroundColor, classButton, icon, link}: ButtonIconProps) {
     return(
-        <Button className={classButton} sx={{ borderRadius: 2, backgroundColor: {backgroundColor}, color: '#fff', border: `1px solid ${backgroundColor}`}} variant="outlined" endIcon={icon}>
+        <Button className={classButton} sx={{ borderRadius: 2, backgroundColor: {backgroundColor}, color: '#fff', border: `1px solid ${backgroundColor}`}} variant="outlined" endIcon={icon} href={link}>
             {text}
         </Button>
     )}

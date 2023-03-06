@@ -1,0 +1,52 @@
+@import "global.scss";
+
+section#introduction{
+    padding-top: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 27.3125rem;
+
+    .introduction-name{
+        p{
+            font-size: 2.5rem;
+            line-height: 1.3;
+            font-weight: bold;
+            color: $black;
+
+            span{
+                text-transform: uppercase;
+                color: $primary;
+            }
+        }
+
+        a{
+            margin-top: 1rem;
+            // width: 25%;
+            // flex-direction: column;
+        }
+    }
+
+    .introduction-foto{
+        position: relative;
+        top: 0;
+        left: 0;
+
+        .box-blue{
+            width: 14.375rem;
+            height: 16.875rem;
+            border-radius: 1.875rem;
+            background: $primary;
+        }
+
+        img{
+            position: absolute;
+            bottom: 0;
+            left: 0.6rem;
+            border-radius: 0 0 1.875rem 1.875rem;
+        }
+
+    }
+}
