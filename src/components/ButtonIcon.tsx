@@ -1,6 +1,5 @@
 import Button from '@mui/material/Button';
-import { createTheme } from '@mui/material/styles';
-
+import '../styles/components/ButtonIcon.scss';
 interface ButtonIconProps {
     text: string;
     backgroundColor: string;
@@ -9,9 +8,10 @@ interface ButtonIconProps {
     link: string;
 }
 
+
 export function ButtonIcon({text, backgroundColor, classButton, icon, link}: ButtonIconProps) {
     return(
-        <Button className={classButton} sx={{ borderRadius: 2, backgroundColor: {backgroundColor}, color: '#fff', border: `1px solid ${backgroundColor}`}} variant="outlined" endIcon={icon} href={link}>
+        <Button className={classButton} id="button-icon" sx={{ borderRadius: 2, backgroundColor: {backgroundColor}, color: '#fff', border: `1px solid ${backgroundColor}`}} variant="outlined" endIcon={icon} href={link}>
             {text}
         </Button>
     )}

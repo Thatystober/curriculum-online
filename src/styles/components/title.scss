@@ -1,0 +1,12 @@
+h2.title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    margin-left: .5rem;
+
+    &::after{
+        content: "";
+        position: absolute;
+        display: block;
+    }
+}

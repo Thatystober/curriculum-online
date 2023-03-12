@@ -39,24 +39,25 @@
         align-items: center;
         gap: 1.25rem;
 
-        .download-curriculum{
-            transition: all .5s;
-            &:hover{
-                border: 1px solid $text;
-                background-color: transparent;
-                color: $text;
+        #button-icon{
+            &.download-curriculum{
+                &:hover{
+                    background-color: #999;
+                    border-color: #999;
+                    color: $white;
+                }
+            }
+
+            &.button-whats{
+                &:hover{
+                    background-color: #09A405;
+                    border-color: #09A405;
+                    color: $white;
+                }
             }
         }
 
-        .button-whats{
-            transition: all .5s;
-    
-            &:hover{
-                border: 1px solid #09A405;
-                background-color: transparent;
-                color: #09A405;
-            }
-        }
+       
     }
     
 }

@@ -17,7 +17,7 @@ export function Header() {
             </ul>
 
             <div className='buttons'>
-                <ButtonIcon classButton="download-curriculum" text='Baixar Curriculum' backgroundColor='#999999' icon={<DescriptionOutlinedIcon />} link="https://www.google.com/"/>
+                <ButtonIcon classButton="download-curriculum" text='Baixar Curriculum' backgroundColor='#999' icon={<DescriptionOutlinedIcon />} link="https://www.google.com/"/>
 
                 <ButtonIcon classButton="button-whats" text='Vamos conversar' backgroundColor='#09A405' icon={<WhatsAppIcon />} link="https://www.google.com/"/>
             </div>
